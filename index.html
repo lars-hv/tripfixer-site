@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Say “fix it”. Consider it fixed. Best seats, best tickets, zero calls.">
+  <title>Tripfixer | For people who fly on points.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/raven.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="raven" viewBox="0 0 64 64">
+      <path fill="currentColor" fill-rule="evenodd" d="M8 51 16 32l-6 2 9-15C25 8 36 5 45 12l6 6 13 8-3 6-14-3c-1 12-7 19-17 24l3-9-13 12 2-10-15 8z M28 18l10 2-3 4-4-1z"/>
+    </symbol>
+    <symbol id="mail" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+        <rect x="2" y="4.5" width="20" height="15" rx="2"/><path d="m3 6 9 7 9-7"/>
+      </g>
+    </symbol>
+    <symbol id="check" viewBox="0 0 16 16">
+      <path d="m2.5 8 3.7 3.7L13.5 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </symbol>
+    <symbol id="chevron" viewBox="0 0 16 16">
+      <path d="m3 6 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="seat" viewBox="0 0 20 24">
+      <g stroke="currentColor" fill="none" stroke-width="1.7">
+        <rect x="2" y="2" width="16" height="20" rx="3"/><path d="M3 17h14"/>
+      </g>
+    </symbol>
+    <symbol id="assigned-seat" viewBox="0 0 20 24">
+      <rect x="1" y="1" width="18" height="22" rx="3" fill="currentColor"/>
+      <path d="m5 11 3.5 3.5 6.5-7" fill="none" stroke="white" stroke-width="2"/>
+    </symbol>
+  </svg>
+  <main>
+    <section class="hero" aria-labelledby="headline">
+      <div class="wrap hero-grid">
+        <div class="lead">
+          <div class="wordmark" role="img" aria-label="Tripfixer">
+            <span class="paper-name" aria-hidden="true">Tripfixer</span>
+            <span class="raven-patch" aria-hidden="true"><svg><use href="#raven"/></svg></span>
+          </div>
+          <p class="stamp">For people who fly on points.</p>
+          <h1 id="headline"><span>Never talk to</span> <span>SAS customer</span> <span>service again.</span></h1>
+          <p class="subline">Say “fix it”. Consider it fixed.<br> Best seats, best tickets, zero calls.</p>
+          <a class="access" href="mailto:hello@tripfixer.app?subject=Tripfixer%20access%20request" aria-label="I want this: request access by email">I want this <svg aria-hidden="true"><use href="#mail"/></svg></a>
+        </div>
+        <div class="stage">
+          <div class="phone" role="group" aria-label="Example conversation with Tripfixer">
+            <div class="screen">
+              <div class="status-bar" aria-hidden="true">
+                <span>9:41</span><i class="island"></i>
+                <svg viewBox="0 0 53 13" fill="currentColor">
+                  <path d="M0 9h2.5v3H0zm4-2.5h2.5V12H4zM8 4h2.5v8H8zm4-3h2.5v11H12z"/>
+                  <path d="M18 4.6a9.4 9.4 0 0 1 13 0m-10.6 2.5a5.9 5.9 0 0 1 8.2 0m-5.8 2.4a2.4 2.4 0 0 1 3.4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="24.5" cy="11.1" r="1"/>
+                  <rect x="35" y="2.5" width="15" height="8.5" rx="2" fill="none" stroke="currentColor"/>
+                  <rect x="36.6" y="4.1" width="11.8" height="5.3" rx="1"/><path d="M51 5h1.4v3.5H51z"/>
+                </svg>
+              </div>
+              <div class="contact" aria-hidden="true">
+                <svg class="back" viewBox="0 0 24 24"><path d="m14.5 4-8 8 8 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="avatar"><svg><use href="#raven"/></svg></span>
+                <span>Tripfixer</span>
+              </div>
+              <div class="thread">
+                <div class="message outgoing" role="group" aria-label="You">
+                  <p class="bubble">Fix my seats.</p>
+                </div>
+                <div class="message incoming" role="group" aria-label="Tripfixer">
+                  <svg class="sender" aria-hidden="true"><use href="#raven"/></svg>
+                  <p class="bubble">Done. <b>30D and 11F.</b> SAS quoted €94. You paid <b>€0.</b></p>
+                </div>
+                <div class="message incoming" role="group" aria-label="Tripfixer">
+                  <div class="bubble">
+                    <p>Business, Oslo to San Francisco, 26 Feb 2027. <b>60,000 points.</b> 30,000 with your Amex voucher. Want it?</p>
+                    <button class="yes" type="button" aria-label="Yes to the example award offer" aria-pressed="false">Yes<svg aria-hidden="true"><use href="#check"/></svg></button>
+                  </div>
+                </div>
+                <div class="message incoming" role="group" aria-label="Tripfixer">
+                  <div class="bubble">
+                    <p>SAS owes you <b>1,316 kr</b> for seats on a flight it cancelled. Claim it?</p>
+                    <button class="yes" type="button" aria-label="Yes to the example claim" aria-pressed="false">Yes<svg aria-hidden="true"><use href="#check"/></svg></button>
+                  </div>
+                </div>
+              </div>
+              <div class="home-bar" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pain band">
+      <div class="wrap split">
+        <h2>Two hours <span>of your life.</span></h2>
+        <div class="pain-copy">
+          <p>Passed around like a ping-pong ball. <strong>Nothing fixed.</strong></p>
+          <p class="source">SAS Norway on Trustpilot: 1.2 of 5, 563 reviews.</p>
+        </div>
+      </div>
+    </section>
+    <section class="how band">
+      <div class="wrap">
+        <h2>Say it. Done.</h2>
+        <ol class="steps" aria-label="How it works">
+          <li>You say what you want.</li>
+          <li>Tripfixer deals with SAS.</li>
+          <li>You tap yes.</li>
+        </ol>
+      </div>
+    </section>
+    <section class="proof band" aria-label="Seat change receipt">
+      <div class="wrap split">
+        <div>
+          <time datetime="2026-11-24">24 Nov 2026.</time>
+          <h2>A human on the SAS chat in <span>5 minutes.</span></h2>
+        </div>
+        <div class="receipt">
+          <p class="seats">
+            Seats <span class="assignment"><strong>30D</strong>
+              <svg viewBox="0 0 148 24" aria-hidden="true">
+                <use href="#seat" x="0" width="20" height="24"/><use href="#seat" x="22" width="20" height="24"/>
+                <use href="#assigned-seat" x="64" width="20" height="24"/><use href="#seat" x="86" width="20" height="24"/><use href="#seat" x="108" width="20" height="24"/>
+              </svg></span>
+            and <span class="assignment"><strong>11F.</strong>
+              <svg viewBox="0 0 148 24" aria-hidden="true">
+                <use href="#seat" x="0" width="20" height="24"/><use href="#seat" x="22" width="20" height="24"/><use href="#seat" x="44" width="20" height="24"/>
+                <use href="#seat" x="84" width="20" height="24"/><use href="#seat" x="106" width="20" height="24"/><use href="#assigned-seat" x="128" width="20" height="24"/>
+              </svg></span>
+          </p>
+          <div class="cost"><s>€94 quoted.</s> <strong>€0 paid.</strong></div>
+        </div>
+      </div>
+    </section>
+    <section class="assurance band">
+      <div class="wrap split">
+        <h2>Others find the seat and wish you luck. <strong>Tripfixer finishes the job.</strong></h2>
+        <details class="permission">
+          <summary>Nothing happens without your yes.<svg aria-hidden="true"><use href="#chevron"/></svg></summary>
+          <p>You approve every payment on SAS’s own page. It never stores your card or password, and it tells SAS it’s an AI assistant.</p>
+        </details>
+      </div>
+    </section>
+    <section class="faq band" aria-label="Frequently asked questions">
+      <div class="wrap split">
+        <details>
+          <summary>Which airlines?<svg aria-hidden="true"><use href="#chevron"/></svg></summary>
+          <p>SAS EuroBonus first.</p>
+        </details>
+        <details open>
+          <summary>Has SAS paid the 1,316 kr?<svg aria-hidden="true"><use href="#chevron"/></svg></summary>
+          <p>Not yet. The claim goes in on 26 Nov.</p>
+        </details>
+      </div>
+    </section>
+    <section class="close band">
+      <div class="wrap">
+        <h2>Dreaming of the Maldives on points? <strong>Say “fix it”.</strong></h2>
+        <a class="access" href="mailto:hello@tripfixer.app?subject=Tripfixer%20access%20request" aria-label="I want this: request access by email">I want this <svg aria-hidden="true"><use href="#mail"/></svg></a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Tripfixer is independent of SAS.</div></footer>
+  <script>
+    for (const button of document.querySelectorAll('.yes')) {
+      button.addEventListener('click', () => {
+        button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+      });
+    }
+  </script>
+</body>
+</html>
